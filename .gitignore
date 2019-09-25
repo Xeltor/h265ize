@@ -51,3 +51,11 @@ jspm_packages
 
 # Yarn Integrity file
 .yarn-integrity
+.vs/h265ize/v16/.suo
+bin/Microsoft.NodejsTools.WebRole.dll
+h265ize.njsproj
+h265ize.njsproj.user
+h265ize.sln
+obj/Debug/h265ize.njsproj.CoreCompileInputs.cache
+obj/Debug/h265ize.njsproj.FileListAbsolute.txt
+obj/Debug/h265ize.njsprojAssemblyReference.cache
