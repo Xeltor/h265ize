@@ -59,3 +59,11 @@ h265ize.sln
 obj/Debug/h265ize.njsproj.CoreCompileInputs.cache
 obj/Debug/h265ize.njsproj.FileListAbsolute.txt
 obj/Debug/h265ize.njsprojAssemblyReference.cache
+.vs/h265ize/config/applicationhost.config
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+h265ize.csproj
+h265ize.csproj.user
+obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+obj/x86/Debug/h265ize.csproj.CoreCompileInputs.cache
+obj/x86/Debug/h265ize.csprojAssemblyReference.cache
