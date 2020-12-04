@@ -1,6 +1,8 @@
 #!/bin/bash
 HOSTNAME="$(hostname)"
 
+echo ${@:1:$#-1} "${@: -1}"
+
 /usr/local/bin/h265ize ${@:1:$#-1} "${@: -1}" \
 && curl --header "Content-Type: application/json" \
 --request POST \
