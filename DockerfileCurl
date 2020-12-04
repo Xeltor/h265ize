@@ -9,6 +9,6 @@ RUN apk add --no-cache --update-cache git ffmpeg curl && \
 
 WORKDIR /h265ize
 
-COPY /scripts/h265ize.sh /scripts/h265ize.sh
+COPY scripts/h265ize.sh /scripts/h265ize.sh
 RUN ["chmod", "+x", "/scripts/h265ize.sh"]
 ENTRYPOINT ["/scripts/h265ize.sh"]
