@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 HOSTNAME="$(hostname)"
 
 /usr/local/bin/h265ize ${@:1:$#-1} "${@: -1}" \
