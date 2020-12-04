@@ -1,7 +1,7 @@
 #!/bin/sh
 HOSTNAME="$(hostname)"
 
-/usr/local/bin/h265ize $@ \
+/usr/local/bin/h265ize ${@:1:$#-1} "${@: -1}" \
 && curl --header "Content-Type: application/json" \
 --request POST \
 --data '{"containerId": "'${HOSTNAME}'"}' \
