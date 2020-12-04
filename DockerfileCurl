@@ -1,0 +1,14 @@
+FROM node:10-alpine
+MAINTAINER Xeltor
+
+LABEL h265ize_version="bleading edge" architecture="amd64"
+
+RUN apk add --no-cache --update-cache git ffmpeg curl && \
+    npm install Xeltor/h265ize --global --no-optional && \
+    mkdir /watch
+
+WORKDIR /h265ize
+
+COPY /scripts/h265ize.sh /scripts/h265ize.sh
+RUN ["chmod", "+x", "/scripts/h265ize.sh"]
+ENTRYPOINT ["/scripts/h265ize.sh"]
