@@ -3,7 +3,7 @@ MAINTAINER Xeltor
 
 LABEL h265ize_version="bleading edge" architecture="amd64"
 
-RUN apk add --no-cache --update-cache git ffmpeg curl && \
+RUN apk add --no-cache --update-cache git ffmpeg curl bash && \
     npm install Xeltor/h265ize --global --no-optional && \
     mkdir /watch
 
